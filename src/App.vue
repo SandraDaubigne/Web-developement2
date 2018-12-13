@@ -36,29 +36,28 @@ export default {
   },
 };
 </script>
-<style>
+
+<style lang="scss">
+
+$fonts:ink free;
   body{
     background-image: linear-gradient(to right bottom,rgba(168, 219, 207, 0.76)),url('./assets/img/lov.stor.jpg');
-
   }
 
-  h1{
-    font-family: ink free;
-    font-size: 5vw;
-    text-align: center;
-    color: black; 
-  }
+    h1{
+      font-family: $fonts;
+      font-size: 5vw;
+      text-align: center;
+      color: black; 
+    }
 
-  p{
-   font-family: ink free;
-    font-size: 3vw;
-    text-align: center;
-    color: black; 
-  }
+    p{
+      @extend h1;
+      font-size: 3vw;
+    
+    }
 
-  .card{
-    margin-bottom: 30px;
-  }
-
+  
 
 </style>
+

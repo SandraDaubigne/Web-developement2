@@ -4,7 +4,7 @@
     <div class="card">
       <img :src="image" :alt="name" class="card-img-top">
       <div class="card-body">
-        <h4 class="card-title">{{ name }}</h4>
+        <h1 class="card-title">{{ name }}</h1>
         <div class="card-text">{{ price }} kr</div>
         <div class="row justify-content-end">
          <button class="btn btn-primary" @click="addToCart(invId)">Lägg i varukorgen</button>
@@ -26,3 +26,18 @@ export default {
   },
 };
 </script>
+
+<style lang="scss"scoped>
+.card{
+  box-shadow: 20px 20px 10px grey;
+    margin-bottom: 30px;
+}
+  h1{
+      font-size: 1.5vw;
+    }
+    .card-title{
+      font-family: ink free;
+      
+    }
+
+</style>

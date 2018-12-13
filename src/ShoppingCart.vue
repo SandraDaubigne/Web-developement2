@@ -54,8 +54,3 @@ export default {
 };
 </script>
 
-<style>
-h4 , .card-text{
-   font-family: ink free;
-}
-</style>
